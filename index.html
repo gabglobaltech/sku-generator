@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SKU Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>SKU Series Generator</h2>
+    <div class="form-group">
+      <input id="series" placeholder="Series (e.g. 001)" />
+      <input id="category" placeholder="Category (e.g. MUG)" />
+      <input id="designType" placeholder="Design Type (e.g. Anime)" />
+      <input id="designName" placeholder="Design Name (e.g. Naruto)" />
+      <input id="custom" placeholder="Custom Code (e.g. X01)" />
+      <button onclick="generateSKUs()">Generate 10 SKUs</button>
+      <button class="clear" onclick="clearSKUs()">Clear SKUs</button>
+    </div>
+    <h3>Recent SKUs (Last 100)</h3>
+    <div id="skuList" class="sku-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
